@@ -1,11 +1,11 @@
-<header>
+<header [class.headerLinks]="darkMode">
     <img *ngIf="!darkMode" routerLink="/" src="../../assets/img/home.png">
     <img *ngIf="darkMode" routerLink="/" src="../../assets/img/home_black.png">
 
-    <div>
+    <div [class.darkLinks]="darkMode">
         <a routerLink="/">Home</a>
         <a routerLink="/imprint">Curriculum</a>
         <a routerLink="/imprint">Projects</a>
-        <a routerLink="/imprint">Imprint</a> 
+        <a routerLink="/imprint">Imprint</a>
     </div>
 </header>
